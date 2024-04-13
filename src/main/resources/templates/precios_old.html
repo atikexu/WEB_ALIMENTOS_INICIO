@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Alimentos selectos</title>
+    
+    <meta name="description" content="En Casa Europa: Auténtica Charcutería nos dedicamos a la venta de embutidos premium: jamones, fiambres, chorizos, morcillas, salchichas y madurados.">
+    <meta name="keywords" content="Casa, Europa, venta, embutidos, charcutería, jamones, fiambres, chorizos, morcillas, salchichas y madurados.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600,700&display=swap" rel="stylesheet">
+    <script type='text/javascript' charset='utf-8' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+    <script>var base_url = '';</script>
+    <link rel="icon" href="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/bootstrap.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/style.css">
+<!--     <link rel="stylesheet" href="VENTAEMBUTIDOS/css/orange.css"> -->
+<!--     <script src="VENTAEMBUTIDOS/jquery.min.js"></script> -->
+<!--     <script src="VENTAEMBUTIDOS/jquery-1.7.2.min.js"></script> -->
+    <script src="VENTAEMBUTIDOS/preloadjs-0.1.0.min.js"></script>
+	<script src="VENTAEMBUTIDOS/mScript.js"></script>
+    <script src="VENTAEMBUTIDOS/main.js"></script>
+    <script src="VENTAEMBUTIDOS/scroll.js"></script>
+    <script src="VENTAEMBUTIDOS/bootstrap.js"></script>
+    
+    
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/css/all.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/css/tailwind.css">
+<!--     <link rel="stylesheet" href="VENTAEMBUTIDOS/css/casaeuropa.css"> -->
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/css/sweetalert.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/css/bootstrap-grid.css">
+  <!-- Estilos CSS de personalización -->
+  <link rel="stylesheet" href="VENTAEMBUTIDOS/css/estilos.css">
+    
+    <style>
+    
+    .cart_anchor{ 
+	    float:right; 
+	    vertical-align:top; 
+	    background: url('VENTAEMBUTIDOS/ico_mail.png') no-repeat center center / 100% auto;
+	    width: 50px;
+	    height: 50px; 
+	    margin-bottom: 50px;
+	}
+    
+    
+    
+        .load {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .load_salchicha {
+            width: 250px;
+            height: 81px;
+            background: #ffffff;
+        }
+        .load_salchicha_blanco {
+            position: fixed;
+            left: 0;
+            width: 0;
+            height: 81px;
+            background: #1d70b7;
+        }
+		#porcentaje
+		{
+			color: #e40148;
+            font-family: EnamelaBold;
+			font-size:27px;
+			position: absolute;
+			z-index:10;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            letter-spacing: 2px;
+		}
+		#wrapper
+		{
+			display:none;
+		}
+		.Boton_cookie{
+            font-size:16px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .Boton_cookie{
+                font-size:12px;
+                cursor: pointer;
+            }
+        }
+    </style>
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-138432179-1');
+</script>
+</head>
+    <body class="" style="">
+	<div id="preloader">
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/load2www.png" alt="">
+		    <span id="porcentaje">94%</span>
+		</div>
+		<div class="load load_salchicha">
+		    <div class="load_salchicha_blanco" style="width: 94%;">
+		    
+		    </div>
+		</div>
+		
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/logopre.png" alt="">
+		</div>
+	</div>
+
+
+
+<div id="wrapper">
+<div class="degrade"></div>  
+<div class="header">
+   
+<a href="#">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+
+<a href="#">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+   
+    
+</div>
+
+<div id="item-menu" class="item-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+<div class="layer" style="display:none">
+    
+</div>
+
+<style>
+
+
+.scrolled__menu .store-button{
+    color: #02f4e0;
+}
+    
+.store-button {
+    background: black;
+    width: 180px;
+    height: 44px;
+    line-height: 36px;
+    margin-top: 2px;
+    border-radius: 10px;
+    padding: 6px;
+    cursor:pointer;
+    margin-left: 20px;
+}
+
+.store-button img{
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+
+@media only screen and (max-width: 700px){
+      
+    .store-button {
+        margin: auto;
+        height: 60px;
+    }   
+    
+    .store-button img{
+        position: absolute;
+        margin-left: -40%;
+        margin-top: 8px;
+    }
+    
+    .store-button span{
+        display: block;
+        margin-top: 10px;
+    }
+    
+    #store {
+        width: 90%;
+    }
+}
+    
+</style>
+
+<nav id="menu" class="menu" style="display:none;">
+    <ul class="menu__options">
+        <li id="nosotros">
+                        <span>QUIÉNES SOMOS</span>
+                    </li>
+        <li  style="border-bottom:5px solid" id="productos">
+                        <span>PRODUCTOS</span>
+                   
+<!--             <ul class="menu__options__producto"> -->
+<!--                 <li><a href="#" class="">JAMONES</a></li> -->
+<!--                 <li><a href="#" class="">FIAMBRES</a></li> -->
+<!--                 <li><a href="#" class="">CHORIZOS &amp; MORCILLAS</a></li> -->
+<!--                 <li><a href="#" class="">SALCHICHAS</a></li> -->
+<!--                 <li><a href="#" class="">MADURADOS</a></li> -->
+<!--                 <li><a href="#" class="">ESPECIALES</a></li> -->
+<!--                 <li><a href="#" class="">OTROS PRODUCTOS</a></li> -->
+                
+<!--             </ul> -->
+        </li>
+        <li id="contacto">
+                        <span>CONTACTO</span>
+                    </li>
+<!--         <li id="intranet"><span>INTRANET</span></li> -->
+		<div id="store" class="store-button" onclick="">
+            <img src="VENTAEMBUTIDOS/cart_icon.png">
+            <span th:text="${categoriaSel.nombre}"></span>
+        </div>
+    </ul>
+    <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_close.png" alt="" class="menu__close">
+</nav>
+     
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000"> -->
+<!--   <ol class="carousel-indicators"> -->
+<!--     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="opacity:.5"></li> -->
+<!--     <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li> -->
+<!--     <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li> -->
+<!--   </ol> -->
+<!--   <div class="carousel-inner"> -->
+<!--     <div class="carousel-item active" th:styleappend="'background: url('+@{/}+'/VENTAEMBUTIDOS/producto_jamonada_3_c.jpg) center center; background-size:cover'"> -->
+<!--            <img src="VENTAEMBUTIDOS/octo1.png" alt="" class="octogono"> -->
+
+<!--     </div> -->
+<!--     <div class="carousel-item" th:styleappend="'background: url('+@{/}+'/VENTAEMBUTIDOS/producto_queso_7_c.jpg) center center; background-size:cover'"> -->
+<!--            <img src="VENTAEMBUTIDOS/octo3.png" alt="" class="octogono"> -->
+<!--     </div> -->
+<!--     <div class="carousel-item" th:styleappend="'background: url('+@{/}+'/VENTAEMBUTIDOS/cabecera_inicio1_c.jpg) center center; background-size:cover'"> -->
+<!--            <img src="VENTAEMBUTIDOS/octo1.png" alt="" class="octogono"> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--   <a class="carousel-control-prev carousel-arrow-top" href="#carouselExampleIndicators" role="button" data-slide="prev"> -->
+<!--     <img src="VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_left.png" alt="" class="carousel-arrow"> -->
+<!--   </a> -->
+<!--   <a class="carousel-control-next carousel-arrow-top" href="#carouselExampleIndicators" role="button" data-slide="next"> -->
+<!--     <img src="VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_right.png" alt="" class="carousel-arrow"> -->
+<!--   </a> -->
+<!--   <div class="tittle-slider"> -->
+<!--       <h1>PRODUCTOS<br> -->
+<!--           </h1> -->
+<!--   </div> -->
+<!--   <img id="arrow-down" src="VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_down.png" alt="" class="arrow-down"> -->
+<!-- </div> -->
+
+<div class="slider-contacto" th:styleappend="'background: url('+@{/}+'/VENTAEMBUTIDOS/'+${categoriaSel.nombreImagen}+') center center; background-size:cover !important'">
+     <div id="tittle-prod" class="tittle-slider">
+        <h1 id="arrow" th:text="${categoriaSel.nombre}">
+        </h1>
+    </div>
+<!--     <img src="./CONTACTO_ VENTA DE EMBUTIDOS _ Casa Europa_ Auténtica Charcutería_files/octo2.png" alt="" class="octogono"> -->
+</div>
+    
+<div class="row">
+
+	<div class="col-sm-2 col-xs-12 content-prodcat overflow-auto" style="text-align: center;">
+	
+		<ul>
+		
+	
+	<!-- 			    <span th:if="${categoriaSel.idCategoria==1}">Hol@: <span th:text="${categoriaSel.nombre}"></span></span> -->
+			<li th:each="cat : ${categorias}">
+				<a th:href="@{/precios(categoria=${cat.idCategoria})}" >
+	
+					<span th:if="${cat.idCategoria}==${categoriaSel.idCategoria}" ><h4 style="color: #e40158"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h4></span>
+	  				<span th:if="${cat.idCategoria}!=${categoriaSel.idCategoria}" ><h4 style="color: #000000"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h4></span>
+	<!-- 					<h4 style="color: #000000"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h4> -->
+	
+				</a>
+				<hr>
+			</li>
+			
+		</ul>
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="row col-sm-9 col-xs-12 contentcat content_paddingcat overflow-auto" >
+	
+<!-- 		<div class="col-sm-4 col-xs-12 card text-center simpleCart_shelfItem"> -->
+<!-- 		  <div class="card-header"> -->
+<!-- 		    Featured -->
+<!-- 		  </div> -->
+<!-- 		  <div class="card-body"> -->
+<!-- 		    <h5 class="card-title">Special title treatment</h5> -->
+<!-- 		    <img class="item_image" style="width:100px; height:120px;" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png" alt="Auto Azul"/> -->
+<!-- 		    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+<!-- 		    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+<!-- 		  </div> -->
+<!-- 		  <div class="card-footer text-muted"> -->
+<!-- 		    <input class="item_Quantity" type="number" min="1" max="10" value="1"/> -->
+<!-- <!-- 		    <img class="item_image" style="width:100px; height:120px;" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png" alt="Auto Azul"/> --> 
+<!-- 		        Precio del producto se obtiene al agregar la clase (item_price) -->
+<!-- 		        <div class="item_price">$35000.99</div> -->
+<!-- 		        Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+<!-- 		        <a class="item_add add-to-cart" href="javascript:;"> Añadir al carrito </a> -->
+<!-- 		  </div> -->
+<!-- 		</div> -->
+		
+<!-- 		<div class="card img-fluid" style="width:500px"> -->
+<!-- 		    <img class="card-img-top" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png" alt="Card image" style="width:100px; height:120px;"> -->
+<!-- 		    <div class="card-img-overlay"> -->
+<!-- 		      <h4 class="card-title">Jofhn Doe</h4> -->
+<!-- 		      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p> -->
+<!-- 		      <a href="#" class="btn btn-primary">See Profile</a> -->
+<!-- 		    </div> -->
+<!-- 		  </div> -->
+	
+	
+	    
+	     
+	     
+            
+            
+            
+            <a class="cart_anchor"></a>
+            
+            
+            <div class='carrito'>
+          
+		          <p class="carrito-total-2">
+		            <span class="">0</span> item(s) <span class="simpleCart_total">S/0.00</span>
+		          </p>
+		
+		          <div class="bolsa1" style="display: none;">
+		          <div class="simpleCart_items">
+		            <div class="col-sm-4 col-xs-12 content-prod" th:each="pro: ${productos}" style="text-align: center;">
+				            <a href="#">
+				            <h2><span th:text="${pro.nombre}"></span>
+				            <ul class="rombo">
+				
+				            </ul>
+				            </h2>
+				<!--             <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello"> -->
+				            </a>
+				            <div class="producto 8" style="background: url(&#39;VENTAEMBUTIDOS/img/jamon/Chicharron-de-prensa.png&#39;) center center; background-size:cover">
+				                <div class="hover"></div>
+				            </div>
+				           
+				            <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+					        <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
+					        <div class="item_price">S/. 35000.99</div>
+					        <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+					        <a class="item_add add-to-cart" href="javascript:;"> Añadir al carrito </a>
+				     </div>
+		            <div class=""></div>
+		            <div class="opciones">
+		              <a class="boton simpleCart_empty" href="javascript:void(0)">Vaciar carrito</a>
+		              <a class="boton simpleCart_checkout" href="#">Checkout</a>
+		            </div>
+		          </div>
+		          </div>
+
+       		 </div>
+       		 
+       		 
+            
+            <div class='carrito'>
+          
+		          <p class="carrito-total">
+		            <span class="simpleCart_quantity">0</span> item(s) <span class="simpleCart_total">S/0.00</span>
+		          </p>
+		
+		          <div class="bolsa">
+		            <div class="simpleCart_items"></div>
+		            <div class="opciones">
+		              <a class="boton simpleCart_empty" href="javascript:void(0)">Vaciar carrito</a>
+		              <a class="boton simpleCart_checkout" href="#">Checkout</a>
+		            </div>
+		          </div>
+
+       		 </div>
+            
+            
+            
+           
+	     
+	     
+		      <!--  Contenedor con el nombre principal (simpleCart_shelfItem)
+		        todos los items de un loop lo deben de tener -->
+		      <div class="col-sm-4 col-xs-12 content-prod simpleCart_shelfItem" style="text-align: center;">
+		        <!-- Nombre del producto se obtiene al agregar la clase (item_name) -->
+		        <h2 class="item_name">Auto Azul</h2>
+		        <!-- Imagen del producto se obtiene al agregar la clase (item_image) -->
+		        <img class="item_image" style="width:100px; height:120px;" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png" alt="Auto Azul"/>
+		        <!-- Cantidad a requerir del producto se obtiene al agregar la clase (item_Quantity) -->
+		        <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+		        <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
+		        <div class="item_price">$35000.99</div>
+		        <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+		        <a class="item_add add-to-cart" href="javascript:;"> Añadir al carrito </a>
+		
+		      </div>
+		      
+		      <div class="col-sm-4 col-xs-12 content-prod simpleCart_shelfItem" style="text-align: center;">
+		        <!-- Nombre del producto se obtiene al agregar la clase (item_name) -->
+		        <h2 class="item_name">Auto Verde</h2>
+		        <!-- Imagen del producto se obtiene al agregar la clase (item_image) -->
+		        <img class="item_image" style="width:100px; height:120px;" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png" alt="Auto Azul"/>
+		        <!-- Cantidad a requerir del producto se obtiene al agregar la clase (item_Quantity) -->
+		        <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+		        <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
+		        <div class="item_price">S/ 35</div>
+		        <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+		        <a class="item_add add-to-cart" href="javascript:;"> Añadir al carrito </a>
+		
+		      </div>
+	  
+	     
+<!-- 	     <div class="col-sm-4 col-xs-12 content-prod simpleCart_shelfItem" th:each="pro: ${productos}" style="text-align: center;"> -->
+<!-- 	            Nombre del producto se obtiene al agregar la clase (item_name) -->
+<!-- 		        <h2 class="item_name">Auto Azul</h2> -->
+<!-- 		        Imagen del producto se obtiene al agregar la clase (item_image) -->
+<!-- 		        <img class="item_image" style="width:100px; height:120px;" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png" alt="Auto Azul"/> -->
+<!-- 		        Cantidad a requerir del producto se obtiene al agregar la clase (item_Quantity) -->
+<!-- 		        <input class="item_Quantity" type="number" min="1" max="10" value="1"/> -->
+<!-- 		        Precio del producto se obtiene al agregar la clase (item_price) -->
+<!-- 		        <div class="item_price">$35000.99</div> -->
+<!-- 		        Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+<!-- 		        <a class="item_add add-to-cart" href="javascript:;"> Añadir al carrito </a> -->
+<!-- 	     </div> -->
+	     
+	     <div class="col-sm-4 col-xs-12 content-prod" th:each="pro: ${productos}" style="text-align: center;">
+	            <a href="#">
+	            <h2><span th:text="${pro.nombre}"></span>
+	            <ul class="rombo">
+	
+	            </ul>
+	            </h2>
+	<!--             <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello"> -->
+	            </a>
+	            <div class="producto 8" style="background: url(&#39;VENTAEMBUTIDOS/img/jamon/Chicharron-de-prensa.png&#39;) center center; background-size:cover">
+	                <div class="hover"></div>
+	            </div>
+	           
+	            <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+		        <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
+		        <div class="item_price">S/. 35000.99</div>
+		        <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+		        <a class="item_add add-to-cart" href="javascript:;"> Añadir al carrito </a>
+	     </div>
+
+	
+	</div>
+	
+
+
+</div>
+
+<footer>
+    <ul class="rrss">
+        <li style="margin-left: -8px;">
+            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/fb.png" alt=""></a>
+        </li>
+        <li style="margin-left: -2px;">
+            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/instagram.png" alt=""></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/youtube.png" alt=""></a>
+        </li>
+    </ul>
+    <h5>En Lima encuéntranos en:</h5>
+    <ul class="footer">
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca1.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca2.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca3.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca4.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca5.png" alt="">
+        </li>
+    </ul>
+    <p><a href="#" style="color:#b5b4b4;" target="_blank">Políticas de Privacidad</a>  |  <a href="#" style="color:#b5b4b4;" target="_blank">Política de Cookies</a></p>
+    <h5><b>Tienda:</b> Av. xxxxxxxxxxxxx  |  <b>Teléfono:</b> 000-000</h5>
+    <h5>2021 xxxxx® Todos los derechos reservados</h5>
+    
+</footer>
+    <script>
+       
+    </script>
+    
+   
+<script>
+$(document).scroll(function(){
+	var ancho = $(window).width();
+    if(ancho > 768) {
+                $('.header').toggleClass('scrolled', $(this).scrollTop() > 100);
+        $('.header img').toggleClass('scrolled-img', $(this).scrollTop() > 100);
+        $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 100);
+        $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 100);
+            $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 100);
+            $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 100);
+            $('.menu__options__producto').toggleClass('menu__options__producto__scrolled', $(this).scrollTop() > 100);
+            $('.menu__options__producto a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+    }
+    else {
+        $('.header').toggleClass('scrolled', $(this).scrollTop() > 50);
+        $('.header img').toggleClass('scrolled-img_prod', $(this).scrollTop() > 50);
+        $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 50);
+        $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 50);
+        $('.tittle-prod').toggleClass('scrolled-tittle_prod', $(this).scrollTop() > 50);
+        $('.options-prod').toggleClass('scrolled-options_prod', $(this).scrollTop() > 50);
+        $('#arrow').toggleClass('scrolled-arrow', $(this).scrollTop() > 50);
+
+        $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 50);
+        $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 50);
+    }
+ });
+</script>
+<script>
+var mediaquery = window.matchMedia("(max-width: 768px)");
+function handleOrientationChange(mediaquery){
+var cantidad = $(".product-par").length;
+
+if (mediaquery.matches) {
+    for(var i=0; i<=cantidad; i++){
+        if(i%2 !== 0) {
+            $("#product-txt"+i).insertAfter("#product-img"+i);
+        }
+    }
+} else {
+    for(var i=0; i<=cantidad; i++){
+        if(i%2 !== 0) {
+            $("#product-img"+i).insertAfter("#product-txt"+i);
+        }
+    }
+}
+
+}
+handleOrientationChange(mediaquery);
+mediaquery.addListener(handleOrientationChange);
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+//     var ancho_scroll = $(window).width();
+//      if(ancho_scroll > 768) {
+// 	jQuery('.post_left').addClass("hidden").viewportChecker({
+// 	    classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
+// 	    offset: 100    
+// 	   });  
+//     jQuery('.post_right').addClass("hidden").viewportChecker({
+// 	    classToAdd: 'visible animated bounceInRight', // Class to add to the elements when they are visible
+// 	    offset: 100    
+// 	   });   
+//     jQuery('.post_txt').addClass("hidden").viewportChecker({
+// 	    classToAdd: 'visible animated2 mostrar', // Class to add to the elements when they are visible
+// 	    offset: 100    
+// 	   });
+//          $('#product-img0').addClass('visible animated bounceInLeft');
+//          $('#product-txt0').addClass('visible animated2 mostrar');
+//      }
+     
+     $('.add-to-cart').on('click',function(){
+         //Scroll to top if cart icon is hidden on top
+         $('html, body').animate({
+             'scrollTop' : $(".cart_anchor").position().top
+         });
+         //Select item image and pass to the function
+         var itemImg = $(this).parent().find('img').eq(0);
+         flyToElement($(itemImg), $('.cart_anchor'));
+     });
+});
+
+function flyToElement(flyer, flyingTo) {
+    var $func = $(this);
+    var divider = 3;
+    var flyerClone = $(flyer).clone();
+    $(flyerClone).css({position: 'absolute', top: $(flyer).offset().top + "px", left: $(flyer).offset().left + "px", opacity: 1, 'z-index': 1000});
+    $('body').append($(flyerClone));
+    var gotoX = $(flyingTo).offset().left + ($(flyingTo).width() / 2) - ($(flyer).width()/divider)/2;
+    var gotoY = $(flyingTo).offset().top + ($(flyingTo).height() / 2) - ($(flyer).height()/divider)/2;
+     
+    $(flyerClone).animate({
+        opacity: 0.4,
+        left: gotoX,
+        top: gotoY,
+        width: $(flyer).width()/divider,
+        height: $(flyer).height()/divider
+    }, 700,
+    function () {
+        $(flyingTo).fadeOut('fast', function () {
+            $(flyingTo).fadeIn('fast', function () {
+                $(flyerClone).fadeOut('fast', function () {
+                    $(flyerClone).remove();
+                });
+            });
+        });
+    });
+}
+</script>
+</div>
+    <script src="VENTAEMBUTIDOS/js/jquery.min.js"></script>
+  <!-- Agregamos la librería Simple Cart -->
+  <script src="VENTAEMBUTIDOS/js/simpleCart.min.js"></script>
+  <!-- Código JS de inicialización  -->
+  <script src="VENTAEMBUTIDOS/js/app.js"></script>
+</body></html>

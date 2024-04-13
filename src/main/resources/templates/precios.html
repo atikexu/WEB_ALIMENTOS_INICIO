@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Alimentos selectos</title>
+    <meta name="description" content="Alimentos Selectos dedicada a la venta y distribución de productos nacionales e importados">
+    <meta name="keywords" content="Alimentos, selectos, venta, embutidos, jamones, chorizos, morcillas, salchichas, quesos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var base_url = '';</script>
+    <link rel="icon" href="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/bootstrap.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/style.css">
+    <script src="VENTAEMBUTIDOS/jquery.min.js"></script>
+    <script src="VENTAEMBUTIDOS/jquery-1.7.2.min.js"></script>
+    <script src="VENTAEMBUTIDOS/preloadjs-0.1.0.min.js"></script>
+	<script src="VENTAEMBUTIDOS/mScript.js"></script>
+    <script src="VENTAEMBUTIDOS/main.js"></script>
+    <script src="VENTAEMBUTIDOS/scroll.js"></script>
+    <script src="VENTAEMBUTIDOS/bootstrap.js"></script>
+    
+    
+	<link href="VENTAEMBUTIDOS/css/global_prod.css" rel="stylesheet" type="text/css">
+    <link href="VENTAEMBUTIDOS/css/wfd-global_prod.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="VENTAEMBUTIDOS/css/font-face_prod.css">
+    
+    <style>
+        .load {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .load_salchicha {
+            width: 250px;
+            height: 81px;
+            background: #ffffff;
+        }
+        .load_salchicha_blanco {
+            position: fixed;
+            left: 0;
+            width: 0;
+            height: 81px;
+            background: #1d70b7;
+        }
+		#porcentaje
+		{
+			color: #e40148;
+            font-family: EnamelaBold;
+			font-size:27px;
+			position: absolute;
+			z-index:10;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            letter-spacing: 2px;
+		}
+		#wrapper
+		{
+			display:none;
+		}
+		.Boton_cookie{
+            font-size:16px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .Boton_cookie{
+                font-size:12px;
+                cursor: pointer;
+            }
+        }
+        
+        
+        .cantidad span{
+		  margin-right: 0;
+		  border: initial
+		}
+		.cantidad button{
+		  background: transparent!important;
+		}
+		.cantidad .form-group{
+		  width: 167px
+		}
+		.cantidad .input-group{
+		  border: 1px solid gray;
+		}
+		.cantidad .input-group > .form-control{
+		  border: 1px solid #fff!important;
+		}
+		
+		
+		
+		
+		
+		
+		.dropdown-submenu{
+    position: relative;
+}
+.dropdown-submenu a::after{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 3px;
+    top: 40%;
+}
+.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    margin-top: -41px;
+    left: 20%;
+}
+@media (max-width: 992px) {
+    .dropdown-menu{
+        width: 50%;
+    }
+    .dropdown-menu .dropdown-submenu{
+        width: auto;
+    }
+}
+		
+		
+		
+		
+		
+		
+		
+    </style>
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-138432179-1');
+  
+</script>
+</head>
+    <body class="" style="">
+	<div id="preloader">
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/load2www.png" alt="">
+		    <span id="porcentaje">94%</span>
+		</div>
+		<div class="load load_salchicha">
+		    <div class="load_salchicha_blanco" style="width: 94%;">
+		    
+		    </div>
+		</div>
+		
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/logopre.png" alt="">
+		</div>
+	</div>
+
+
+
+<div id="wrapper">
+<div class="degrade"></div>  
+<div class="header">
+   
+<a th:href="@{/}">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+
+<a th:href="@{/}">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+   
+    
+</div>
+
+<div id="item-menu" class="item-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+<div class="layer" style="display:none">
+    
+</div>
+
+<nav id="menu" class="menu" style="display:none;">
+    <ul class="menu__options">
+        <li id="nosotros">
+                        <span>QUIÉNES SOMOS</span>
+                    </li>
+        <li  style="border-bottom:5px solid" id="productos">
+                        <span>PRODUCTOS</span>
+        </li>
+        <li id="contacto">
+                        <span>CONTACTO</span>
+                    </li>
+		<div id="store1" class="store-button1" onclick="" style="display: inline-block;">
+            <span th:text="${categoriaSel.nombre}"></span>
+        </div>
+        <div id="store2" class="store-button2" onclick="" style="display: inline-block;">
+        	<a href="https://wa.me/51989528432?text=Alimentos%20Selectos%20-%20Quisiera%20Consultar%20sobre%20un%20producto" target="_blank">
+            <img src="VENTAEMBUTIDOS/img/whatsapp.png" style="margin-left: auto;margin-right: auto;display: block;"></a>
+        </div>
+    </ul>
+    <img src="./VENTAEMBUTIDOS/alimentos_close.png" alt="" class="menu__close">
+</nav>
+
+
+<div class="slider-contacto" th:styleappend="'background: url(http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/'+${categoriaSel.nombreImagen}+') center center; background-size:cover !important'">
+     <div id="tittle-prod" class="tittle-slider">
+        <h1 id="arrow" th:text="${categoriaSel.nombre}">
+        </h1>
+    </div>
+
+</div>
+    
+<div class="row">
+	<div class="col-sm-1 col-xs-12">
+	</div>
+	<div class="col-sm-2 col-xs-12 content-prodcat overflow-auto" style="text-align: center;">
+		<ul>
+			<span><h4 style="color: #000000"><span class="button_menu" th:text="CATEGORÍAS"></span></h4></span>
+			<hr style="border-top: 4px solid #eaeaea;" />
+			<li th:each="cat : ${categorias}" class="dropdown-submenu">
+			
+				<span th:if="${cat.idCategoria}!=9" >
+				<a th:href="@{/precios(categoria=${cat.idCategoria})}" class="nav-link">
+	
+					<span th:if="${cat.idCategoria}==${categoriaSel.idCategoria}" ><h6 style="color: #e40158"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h6></span>
+	  				<span th:if="${cat.idCategoria}!=${categoriaSel.idCategoria}" ><h6 style="color: #000000"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h6></span>
+				</a>
+				</span>
+				<span th:if="${cat.idCategoria}==9" >
+				<a th:href="@{/precios(categoria=${cat.idCategoria})}" class="nav-link dropdown-toggle">
+	
+					<span th:if="${cat.idCategoria}==${categoriaSel.idCategoria}" ><h6 style="color: #e40158"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h6></span>
+	  				<span th:if="${cat.idCategoria}!=${categoriaSel.idCategoria}" ><h6 style="color: #000000"><span class="button_menu_txt" th:text="${cat.nombre}"></span></h6></span>
+				</a>
+				</span>
+				
+				<hr>
+				<span th:if="${cat.idCategoria}==9" >
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li th:each="subcat : ${subcategorias}">
+							<a th:href="@{/preciosub(categoria=${cat.idCategoria},subcategoria=${subcat.idSubCategoria})}" class="nav-link">
+				  				<span><h6 style="color: #000000"><span class="button_menu_txt" th:text="${subcat.nombre}"></span></h6></span>
+							</a>
+						</li>
+		            </ul>
+	            </span>
+			</li>	
+		</ul>
+	</div>
+	
+ 
+    <div class="row col-sm-8 col-xs-12 wrapper search-results-wrapper product-list-wrapper clear-fix contentcat" >
+      <div class="center col-sm-12 col-xs-12" >
+      	<h6 style="color: #8c8e8f"><span>Mostrando todos los resultados.&nbsp;</span><span th:text="${totalProductos}"></span><span>&nbsp;producto(s)</span></h6>
+      </div>
+      <form th:action="@{/buscarprecios}" th:object="${producto}" method="POST" class="needs-validation">
+	      <div class="row center col-sm-12 col-xs-12" >
+		      
+		      	<input type="text" placeholder="Nombre del producto" class="input-form-search" name="nombre" id="nombre" th:field="*{nombre}" required>
+		      	<button type="submit" class="btn-form-search">Buscar</button>
+	<!--       	<select name="orden" id="orden" class="input-form-search" style="height: 48px;"> -->
+	<!--                 <option th:value="'Orden por defecto'"  th:text="'Orden por defecto'" selected></option> -->
+	<!--                 <option th:value="'Orden por los últimos'" th:text="'Orden por los últimos'"></option> -->
+	<!--             </select> -->
+			
+	      </div>
+      </form>
+       <div class="center col-sm-3 col-xs-12" >
+          <div class="search-shelf-wrapper" >
+             <div class="category-banner-slider empty">
+                <div class="slider" id="conten-search-slider" style="display: none;"></div>
+             </div>
+             <div class="shelf-content">
+                <div class="main">
+                   <div class="vitrine resultItemsWrapper">
+                      <div id="ResultItems" class="product-shelf">
+                         <div class="product-shelf">
+                            <ul>
+                               <li class="lacteos" style="padding-right: 15px;" th:each="pro: ${productos}">
+                                  <div class="product-item product-item">
+
+                                     <div class="product-item__image-wrapper">
+                                        <div class="product-item__flags">
+
+                                        </div>
+                                        <div class="product-item__actions">
+                                           <button type="button" class="pop product-item__action product-item__action--quickview btn dark font-icn view-more" data-tooltip="Vista Rápida" data-toggle="modal" >
+	                                           <img th:src="@{http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/__${pro.nombreImagen}__}" style="visibility: hidden;" th:alt="${pro.nombre}">
+                                           </button>
+                                        </div>
+                                        <a class="product-item__image-link" href="#">
+                                           <div class="has--lazyload is--lazyloaded" data-noscript=""><img th:src="@{http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/__${pro.nombreImagen}__}" width="230" height="250" th:alt="${pro.nombre}" id=""></div>
+                                        </a>
+                                     </div>
+                                     <div class="product-item__bottom">
+                                        <div class="product-item__info">
+                                        	<span class="product-item__name" th:title="${pro.nombre}" th:text="${pro.nombre}"></span>
+                                        </div>
+                                        <div class="product-prices__wrapper product-prices__wrapper--better">
+<!--                                            <div class="product-prices__price product-prices__price--better-price" style="text-align: right;"> -->
+<!--                                               <span class="product-prices__label"> -->
+<!--                                               <span class="product-prices__label--discount-name" th:text="${pro.descripcion}"></span> -->
+<!--                                               </span> -->
+<!--                                            </div> -->
+                                           <div class="product-item__info">
+                                        	  <span class="product-item__name_desc" th:text="${pro.descripcion}"></span>
+                                           </div>
+                                           <div class="product-prices__price product-prices__price--former-price" style="display: none;">
+                                           </div>
+                                           <div class="product-prices__notes" style="display: none;">
+                                           </div>
+                                        </div>
+
+                                        <div class="product-item__controls" style="display: none;">
+                                           <div class="product-item__cart-amount">
+                                              <span class="font-icn check"></span>
+                                              <span class="value"></span>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+
+                               </li>
+                               <li id="helperComplement_555723"  class="helperComplement"></li>
+          
+                            </ul>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+
+             </div>
+          </div>
+       </div>
+    </div>
+        
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div id="caption" style="font-size:25px; color:#e40158"></div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+<!--       <div class="modal-footer"> -->
+
+<!--       </div> -->
+    </div>
+  </div>
+</div>
+
+
+<div class="row" style="background-color:#f2f0e1; text-align: center;" >
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+            <img src="VENTAEMBUTIDOS/img/delivery.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+			<h3 style="color: #000000">
+            		ENTREGA A DOMICILIO
+		    </h3>
+		    <p>
+		            Reciba su pedido en casa
+		
+		    </p>
+        </div> 
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+            <img src="VENTAEMBUTIDOS/img/24horas.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+            <h3 style="color: #000000">
+            		SERVICIO LAS 24 HORAS
+		    </h3>
+		    <p>
+		            Consulte y comience a comprar
+		
+		    </p>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+        	<img src="VENTAEMBUTIDOS/img/pago.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+            <h3 style="color: #000000">
+            		COMPRA FÁCIL
+		    </h3>
+		    <p>
+		            Un proceso sencillo y un pago seguro
+		    </p>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+        	<img src="VENTAEMBUTIDOS/img/garantia.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+            <h3 style="color: #000000">
+            		GARANTÍA DE CALIDAD
+		    </h3>
+		    <p>
+		            Compromiso en todas sus compras
+		    </p>
+        </div>
+
+
+</div>  
+
+
+<footer>
+	<ul class="rrss">
+		   		<li style="color: #ffffff">Encuéntranos en:</li>
+		        <li>
+		            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/fb.png" alt="Facebook - Alimentos Selectos" style="width: 60%;height: auto;"></a>
+		        </li>
+		        <li>
+		            <a href="https://instagram.com/Alimentoselectos" target="_blank"><img src="./VENTAEMBUTIDOS/instagram.png" alt="Instagram - Alimentos Selectos" style="width: 60%;height: auto;"></a>
+		        </li>
+	</ul>
+	<div style=" text-align: center;" >
+		<div  style="display: inline-block;padding-left:10px">
+        	<ul style="text-align: left;">
+        	    <li style="color: #ffffff">Categorías</li>
+        		<li><a th:href="@{/precios(categoria=1)}" style="color: #b5b4b4">Jamones</a></li>
+        		<li><a th:href="@{/precios(categoria=2)}" style="color: #b5b4b4">Chicharrones</a></li>
+        		<li><a th:href="@{/precios(categoria=3)}" style="color: #b5b4b4">Jamonadas</a></li>
+        		<li><a th:href="@{/precios(categoria=4)}" style="color: #b5b4b4">Salchichas</a></li>
+        		<li><a th:href="@{/precios(categoria=5)}" style="color: #b5b4b4">Ahumados</a></li>
+        		<li><a th:href="@{/precios(categoria=6)}" style="color: #b5b4b4">Quesos</a></li>
+        		<li><a th:href="@{/precios(categoria=7)}" style="color: #b5b4b4">Papas prefritas</a></li>
+        		<li><a th:href="@{/precios(categoria=8)}" style="color: #b5b4b4">Empacados</a></li>
+        		<li><a th:href="@{/precios(categoria=9)}" style="color: #b5b4b4">Cremas</a></li>
+        		<li><a th:href="@{/precios(categoria=10)}" style="color: #b5b4b4">Aperitivos</a></li>
+        	</ul>
+		</div>
+		<div  style="display: inline-block;padding-left:10px">
+	        <ul style="text-align: left;">
+	        	    <li style="color: #ffffff">Información</li>
+	        		<li><a th:href="@{/}" style="color: #b5b4b4">Inicio</a></li>
+	        		<li><a th:href="@{/somos}" style="color: #b5b4b4">Quiénes somos</a></li>
+	        		<li><a th:href="@{/productos}" style="color: #b5b4b4">Productos</a></li>
+	        		<li><a th:href="@{/contacto}" style="color: #b5b4b4">Contacto</a></li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+        	</ul>
+		</div>
+		<div  style="display: inline-block;padding-left:10px">
+        	<ul style="text-align: left;">
+	        	    <li style="color: #ffffff">Contacto</li>
+	        		<li style="color: #b5b4b4">Dirección:</li>
+	        		<li style="color: #b5b4b4">Lima-Santa Anita</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+        	</ul>
+        </div>
+    </div>
+    <hr style="background-color: #b5b4b4">
+    <h5>Celular: 989 528 432 | Correo: atencionalcliente@alimentoselectos.pe</h5>
+    <h5>2021 ALIMENTOSELECTOS.PE Todos los derechos reservados</h5>
+</footer>
+    <script>
+       
+    </script>
+    
+   
+<script>
+$(document).scroll(function(){
+	var ancho = $(window).width();
+    if(ancho > 768) {
+                $('.header').toggleClass('scrolled', $(this).scrollTop() > 100);
+        $('.header img').toggleClass('scrolled-img', $(this).scrollTop() > 100);
+        $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 100);
+        $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 100);
+            $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 100);
+            $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 100);
+            $('.menu__options__producto').toggleClass('menu__options__producto__scrolled', $(this).scrollTop() > 100);
+            $('.menu__options__producto a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+    }
+    else {
+        $('.header').toggleClass('scrolled', $(this).scrollTop() > 50);
+        $('.header img').toggleClass('scrolled-img_prod', $(this).scrollTop() > 50);
+        $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 50);
+        $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 50);
+        $('.tittle-prod').toggleClass('scrolled-tittle_prod', $(this).scrollTop() > 50);
+        $('.options-prod').toggleClass('scrolled-options_prod', $(this).scrollTop() > 50);
+        $('#arrow').toggleClass('scrolled-arrow', $(this).scrollTop() > 50);
+
+        $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 50);
+        $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 50);
+    }
+ });
+</script>
+
+</div>
+    
+</body></html>

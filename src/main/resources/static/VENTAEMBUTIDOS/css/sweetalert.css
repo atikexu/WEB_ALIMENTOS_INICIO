@@ -1,0 +1,13 @@
+
+.swal-footer{
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.swal-button{
+    background-color: #000 !important;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 1;
+}

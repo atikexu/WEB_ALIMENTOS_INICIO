@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Alimentos selectos</title>
+    <meta name="description" content="Alimentos Selectos dedicada a la venta y distribución de productos nacionales e importados">
+    <meta name="keywords" content="Alimentos, selectos, venta, embutidos, jamones, chorizos, morcillas, salchichas, quesos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var base_url = '';</script>
+    <link rel="icon" href="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/bootstrap.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/style.css">
+    <script src="VENTAEMBUTIDOS/jquery.min.js"></script>
+    <script src="VENTAEMBUTIDOS/jquery-1.7.2.min.js"></script>
+    <script src="VENTAEMBUTIDOS/preloadjs-0.1.0.min.js"></script>
+	<script src="VENTAEMBUTIDOS/mScript.js"></script>
+    <script src="VENTAEMBUTIDOS/main.js"></script>
+    <script src="VENTAEMBUTIDOS/scroll.js"></script>
+    <script src="VENTAEMBUTIDOS/bootstrap.js"></script>
+    <style>
+        .load {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .load_salchicha {
+            width: 250px;
+            height: 81px;
+            background: #ffffff;
+        }
+        .load_salchicha_blanco {
+            position: fixed;
+            left: 0;
+            width: 0;
+            height: 81px;
+            background: #1d70b7;
+        }
+		#porcentaje
+		{
+			color: #e40148;
+            font-family: EnamelaBold;
+			font-size:27px;
+			position: absolute;
+			z-index:10;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            letter-spacing: 2px;
+		}
+		#wrapper
+		{
+			display:none;
+		}
+		.Boton_cookie{
+            font-size:16px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .Boton_cookie{
+                font-size:12px;
+                cursor: pointer;
+            }
+        }
+    </style>
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-138432179-1');
+</script>
+</head>
+    <body class="" style="">
+	<div id="preloader">
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/load2www.png" alt="">
+		    <span id="porcentaje">94%</span>
+		</div>
+		<div class="load load_salchicha">
+		    <div class="load_salchicha_blanco" style="width: 94%;">
+		    
+		    </div>
+		</div>
+		
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/logopre.png" alt="">
+		</div>
+	</div>
+	
+	
+
+<div id="wrapper">
+<div class="degrade"></div>  
+<div class="header">
+   
+<a th:href="@{/}">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+
+<a th:href="@{/}">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+   
+    
+</div>
+
+<div id="item-menu" class="item-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+<div class="layer" style="display:none">
+    
+</div>
+
+<nav id="menu" class="menu" style="display:none;">
+    <ul class="menu__options">
+        <li id="nosotros">
+                        <span>QUIÉNES SOMOS</span>
+                    </li>
+        <li id="productos">
+                        <span>PRODUCTOS</span>
+        </li>
+        <li id="contacto">
+                        <span>CONTACTO</span>
+        </li>
+		<div id="store2" class="store-button2" onclick="" style="display: inline-block;">
+        	<a href="https://wa.me/51989528432?text=Alimentos%20Selectos%20-%20Quisiera%20Consultar%20sobre%20un%20producto" target="_blank">
+            <img src="VENTAEMBUTIDOS/img/whatsapp.png" style="margin-left: auto;margin-right: auto;display: block;"></a>
+        </div>
+    </ul>
+    <img src="./VENTAEMBUTIDOS/alimentos_close.png" alt="" class="menu__close">
+</nav>
+    
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="opacity:.5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" th:styleappend="'background: url(http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/cabecera_inicio1_c.jpg) center center; background-size:cover'">
+
+    </div>
+    <div class="carousel-item" th:styleappend="'background: url(http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/cabecera_inicio2_c.jpg) center center; background-size:cover'">
+    </div>
+    <div class="carousel-item" th:styleappend="'background: url(http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/cabecera_inicio3_c.jpg) center center; background-size:cover'">
+    </div>
+  </div>
+  <a class="carousel-control-prev carousel-arrow-top" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <img src="VENTAEMBUTIDOS/alimentos_left.png" alt="" class="carousel-arrow">
+  </a>
+  <a class="carousel-control-next carousel-arrow-top" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <img src="VENTAEMBUTIDOS/alimentos_right.png" alt="" class="carousel-arrow">
+  </a>
+  <div class="tittle-slider">
+      <h1>LOS MEJORES PRODUCTOS<br>
+          SELECTOS</h1>
+  </div>
+  <img id="arrow-down" src="VENTAEMBUTIDOS/alimentos_down.png" alt="" class="arrow-down">
+</div>    
+    
+<div class="row">
+    <div class="col-sm-12 content about">
+        <p>
+<!--             Somos un equipo de expertos Charcuteros,<br> -->
+<!--             dedicados a compartir nuestra pasión: -->
+        </p>
+        <h7 style="color: #e40158">
+            SOMOS UNA EMPRESA DEDICADA A LA VENTA
+            Y DISTRIBUCIÓN DE PRODUCTOS NACIONALES E IMPORTADOS
+        </h7>
+        <p>
+<!--             Nuestro amor por este arte gastronómico tan exquisito nos motiva día a día <br> -->
+<!--             a buscar la perfección y a convertirnos en los mejores maestros  -->
+<!--             de la buena charcutería.  -->
+        </p>
+        <div class="button">
+            <span class="button_txt">CONOCE NUESTROS PRODUCTOS</span>
+            <span>
+                <img src="./VENTAEMBUTIDOS/img/adorno_mensaje_productos.png" alt="">
+            </span>
+            <span>
+                <img src="./VENTAEMBUTIDOS/img/adorno_mensaje_productos.png" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="row col-sm-12 col-xs-12 content content_padding">
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=1)}">
+            <h2>JAMONES
+            <ul class="rombo" style="opacity: 0;">
+
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 1" style="background: url(&#39;VENTAEMBUTIDOS/producto_jamon_1_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=2)}">
+            <h2>CHORIZOS Y <br>AHUMADOS
+            <ul class="rombo">
+
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 2" style="background: url(&#39;VENTAEMBUTIDOS/producto_chorizo_2_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=3)}">
+            <h2>JAMONADAS
+            <ul class="rombo" style="opacity: 0;">
+ 
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 3" style="background: url(&#39;VENTAEMBUTIDOS/producto_jamonada_3_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div> 
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=4)}">
+            <h2>SALCHICHAS
+            <ul class="rombo">
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 4" style="background: url(&#39;VENTAEMBUTIDOS/producto_salchicha_4_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=5)}">
+            <h2>AHUMADOS
+            <ul class="rombo" style="opacity: 0;">
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 5" style="background: url(&#39;VENTAEMBUTIDOS/producto_ahumado_5_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=8)}">
+            <h2>EMPACADOS
+            <ul class="rombo">
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 6" style="background: url(&#39;VENTAEMBUTIDOS/producto_empacado_6_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=6)}">
+            <h2>QUESOS
+            <ul class="rombo">
+
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 7" style="background: url(&#39;VENTAEMBUTIDOS/producto_queso_7_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=7)}">
+            <h2>PAPAS PREFRITAS
+            <ul class="rombo">
+
+            </ul>
+            </h2>
+<!--             <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello"> -->
+            </a>
+            <div class="producto 8" style="background: url(&#39;VENTAEMBUTIDOS/producto_papa_8_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=9)}">
+            <h2>CREMAS
+            <ul class="rombo">
+
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 9" style="background: url(&#39;VENTAEMBUTIDOS/producto_crema_9_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=10)}">
+            <h2>APERITIVOS
+            <ul class="rombo">
+
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 10" style="background: url(&#39;VENTAEMBUTIDOS/producto_aperitivo_10_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3 col-xs-12 content-prod">
+            <a th:href="@{/precios(categoria=11)}">
+            <h2>ACEITES
+            <ul class="rombo">
+
+            </ul>
+            </h2>
+            </a>
+            <div class="producto 11" style="background: url(&#39;VENTAEMBUTIDOS/producto_aceite_11_c.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row" style="background-color:#f2f0e1; text-align: center;" >
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+            <img src="VENTAEMBUTIDOS/img/delivery.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+			<h3 style="color: #000000">
+            		ENTREGA A DOMICILIO
+		    </h3>
+		    <p>
+		            Reciba su pedido en casa
+		
+		    </p>
+        </div> 
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+            <img src="VENTAEMBUTIDOS/img/24horas.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+            <h3 style="color: #000000">
+            		SERVICIO LAS 24 HORAS
+		    </h3>
+		    <p>
+		            Consulte y comience a comprar
+		
+		    </p>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+        	<img src="VENTAEMBUTIDOS/img/pago.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+            <h3 style="color: #000000">
+            		COMPRA FÁCIL
+		    </h3>
+		    <p>
+		            Un proceso sencillo y un pago seguro
+		    </p>
+        </div>
+        <div class="col-sm-3 col-xs-12 content-prod" style="text-align: center;">
+        	<img src="VENTAEMBUTIDOS/img/garantia.png" style="width:50px; height:50px; margin-left: auto;margin-right: auto;display: block;" alt="">
+            <h3 style="color: #000000">
+            		GARANTÍA DE CALIDAD
+		    </h3>
+		    <p>
+		            Compromiso en todas sus compras
+		    </p>
+        </div>
+
+
+</div>  
+<footer>
+	<ul class="rrss">
+		   		<li style="color: #ffffff">Encuéntranos en:</li>
+		        <li>
+		            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/fb.png" alt="Facebook - Alimentos Selectos" style="width: 60%;height: auto;"></a>
+		        </li>
+		        <li>
+		            <a href="https://instagram.com/Alimentoselectos" target="_blank"><img src="./VENTAEMBUTIDOS/instagram.png" alt="Instagram - Alimentos Selectos" style="width: 60%;height: auto;"></a>
+		        </li>
+	</ul>
+	<div style=" text-align: center;" >
+		<div  style="display: inline-block;padding-left:10px">
+        	<ul style="text-align: left;">
+        	    <li style="color: #ffffff">Categorías</li>
+        		<li><a th:href="@{/precios(categoria=1)}" style="color: #b5b4b4">Jamones</a></li>
+        		<li><a th:href="@{/precios(categoria=2)}" style="color: #b5b4b4">Chicharrones</a></li>
+        		<li><a th:href="@{/precios(categoria=3)}" style="color: #b5b4b4">Jamonadas</a></li>
+        		<li><a th:href="@{/precios(categoria=4)}" style="color: #b5b4b4">Salchichas</a></li>
+        		<li><a th:href="@{/precios(categoria=5)}" style="color: #b5b4b4">Ahumados</a></li>
+        		<li><a th:href="@{/precios(categoria=6)}" style="color: #b5b4b4">Quesos</a></li>
+        		<li><a th:href="@{/precios(categoria=7)}" style="color: #b5b4b4">Papas prefritas</a></li>
+        		<li><a th:href="@{/precios(categoria=8)}" style="color: #b5b4b4">Empacados</a></li>
+        		<li><a th:href="@{/precios(categoria=9)}" style="color: #b5b4b4">Cremas</a></li>
+        		<li><a th:href="@{/precios(categoria=10)}" style="color: #b5b4b4">Aperitivos</a></li>
+        	</ul>
+		</div>
+		<div  style="display: inline-block;padding-left:10px">
+	        <ul style="text-align: left;">
+	        	    <li style="color: #ffffff">Información</li>
+	        		<li><a th:href="@{/}" style="color: #b5b4b4">Inicio</a></li>
+	        		<li><a th:href="@{/somos}" style="color: #b5b4b4">Quiénes somos</a></li>
+	        		<li><a th:href="@{/productos}" style="color: #b5b4b4">Productos</a></li>
+	        		<li><a th:href="@{/contacto}" style="color: #b5b4b4">Contacto</a></li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+        	</ul>
+		</div>
+		<div  style="display: inline-block;padding-left:10px">
+        	<ul style="text-align: left;">
+	        	    <li style="color: #ffffff">Contacto</li>
+	        		<li style="color: #b5b4b4">Dirección:</li>
+	        		<li style="color: #b5b4b4">Lima-Santa Anita</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+        	</ul>
+        </div>
+    </div>
+    <hr style="background-color: #b5b4b4">
+    <h5>Celular: 989 528 432 | Correo: atencionalcliente@alimentoselectos.pe</h5>
+    <h5>2021 ALIMENTOSELECTOS.PE Todos los derechos reservados</h5>
+</footer>
+    
+   
+<script>
+$(document).scroll(function(){
+     $('.header').toggleClass('scrolled', $(this).scrollTop() > 100);
+     $('.header img').toggleClass('scrolled-img', $(this).scrollTop() > 100);
+     $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 100);
+     $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 100);
+     var ancho = $(window).width();
+     if(ancho > 768) {
+         $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 100);
+         $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 100);
+         $('.menu__options__producto').toggleClass('menu__options__producto__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__producto a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__delivery').toggleClass('menu__options__delivery__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__delivery a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+     }
+ });
+</script>
+</div>
+    
+</body></html>

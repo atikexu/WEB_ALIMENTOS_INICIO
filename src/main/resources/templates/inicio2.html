@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>VENTA dddddMARC</title>
+    <meta name="description" content="En Casa Europa: Auténtica Charcutería nos dedicamos a la venta de embutidos premium: jamones, fiambres, chorizos, morcillas, salchichas y madurados.">
+    <meta name="keywords" content="Casa, Europa, venta, embutidos, charcutería, jamones, fiambres, chorizos, morcillas, salchichas y madurados.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var base_url = '#';</script>
+    <link rel="icon" href="http://www.casaeuropa.pe/assets/img/favicon.png">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/bootstrap.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/style.css">
+    <script src="VENTAEMBUTIDOS/jquery.min.js"></script>
+    <script src="VENTAEMBUTIDOS/jquery-1.7.2.min.js"></script>
+    <script src="VENTAEMBUTIDOS/preloadjs-0.1.0.min.js"></script>
+	<script src="VENTAEMBUTIDOS/mScript.js"></script>
+    <script src="VENTAEMBUTIDOS/main.js"></script>
+    <script src="VENTAEMBUTIDOS/scroll.js"></script>
+    <script src="VENTAEMBUTIDOS/bootstrap.js"></script>
+    <style>
+        .load {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .load_salchicha {
+            width: 100px;
+            height: 81px;
+            background: #e1989a;
+        }
+        .load_salchicha_blanco {
+            position: fixed;
+            left: 0;
+            width: 0;
+            height: 81px;
+            background: white;
+        }
+		#porcentaje
+		{
+			color:white;
+            font-family: EnamelaBold;
+			font-size:24px;
+			position: absolute;
+			z-index:10;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            letter-spacing: 2px;
+		}
+		#wrapper
+		{
+			display:none;
+		}
+		.Boton_cookie{
+            font-size:16px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .Boton_cookie{
+                font-size:12px;
+                cursor: pointer;
+            }
+        }
+    </style>
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-138432179-1');
+</script>
+</head>
+    <body class="" style="">
+	
+
+
+
+<div id="wrapper" style="display: block;">
+<div class="degrade"></div>  
+<div class="header">
+   
+<a href="#">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+
+   
+    
+</div>
+
+<div id="item-menu" class="item-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+<div class="layer" style="display:none">
+    
+</div>
+
+<style>
+
+
+.scrolled__menu .store-button{
+    color: #f2f0e0;
+}
+    
+.store-button {
+    background: black;
+    width: 180px;
+    height: 44px;
+    line-height: 36px;
+    margin-top: 2px;
+    border-radius: 10px;
+    padding: 6px;
+    cursor:pointer;
+    margin-left: 20px;
+}
+
+.store-button img{
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+
+@media only screen and (max-width: 700px){
+      
+    .store-button {
+        margin: auto;
+        height: 60px;
+    }   
+    
+    .store-button img{
+        position: absolute;
+        margin-left: -40%;
+        margin-top: 8px;
+    }
+    
+    .store-button span{
+        display: block;
+        margin-top: 10px;
+    }
+    
+    #store {
+        width: 90%;
+    }
+}
+    
+</style>
+
+<nav id="menu" class="menu" style="display:none;">
+    <ul class="menu__options">
+        <li id="nosotros">
+                        <span>QUIÉNES SOMOS</span>
+                    </li>
+        <li class="menu__producto">
+                        <span>PRODUCTOS</span>
+                   
+            <ul class="menu__options__producto">
+                <li><a href="#" class="">JAMONES</a></li>
+                <li><a href="#" class="">FIAMBRES</a></li>
+                <li><a href="#" class="">CHORIZOS &amp; MORCILLAS</a></li>
+                <li><a href="#" class="">SALCHICHAS</a></li>
+                <li><a href="#" class="">MADURADOS</a></li>
+                <li><a href="#" class="">ESPECIALES</a></li>
+                <li><a href="#" class="">OTROS PRODUCTOS</a></li>
+                
+            </ul>
+        </li>
+        <li id="contacto">
+                        <span>CONTACTO</span>
+                    </li>
+        <li id="intranet"><span>INTRANET</span></li>
+        <div id="store" class="store-button" onclick="">
+            <img src="VENTAEMBUTIDOS/cart_icon.png">
+            <span>DELIVERY</span>
+        </div>
+    </ul>
+    <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_close.png" alt="" class="menu__close">
+</nav>
+    
+
+<style>
+
+.modal {
+  display: none; 
+  position: fixed; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,.6);
+}
+
+.modal-content {
+  margin: auto;
+  width: 80%;
+  width: 700px;
+}
+
+#modal-button{
+  font-size: 16px;
+  color: black;
+  font-family: Bluu;
+  text-align: center;
+  background: #f3efe2;
+  padding-bottom: 32px;
+}
+
+#modal-button a:link {
+      color: black;
+}
+
+.floating-content {
+    position: absolute;
+    width: 30%;
+    margin-top: 71%;
+    margin-left: 17%;
+    z-index: 3;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  cursor:pointer;
+}
+
+#modal-close {
+    position: absolute;
+    right: auto;
+    width: 60px;
+    text-align: center;
+    right: 0;
+    line-height: 60px;
+    height: 60px;
+    background: black;
+    z-index: 2;
+}
+
+#modal-close span{
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: Bluu;
+    line-height: normal;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 1800px){
+  .modal-content {
+    width: 500px;
+  }
+  
+  #modal-close {
+      width: 40px;
+      line-height: 40px;
+      height: 40px;
+  }
+
+  #modal-close span{
+      font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  #modal-button {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  #modal-close {
+      width: 35px;
+      line-height: 35px;
+      height: 35px;
+  }
+
+  #modal-close span{
+      font-size: 20px;
+  }
+}
+</style>
+
+
+
+<div id="delivery_modal" class="modal" aria-hidden="true" style="display: none;">
+  <div class="modal-content">
+    <div id="modal-close">
+        <span class="noselect">X</span>
+    </div>
+    <img src="VENTAEMBUTIDOS/delivery_store_modal.png" class="modal-image" onclick="">
+  </div>
+</div>
+
+
+     
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_cabecera_1.jpg&#39;) center center; background-size:cover">
+           <img src="VENTAEMBUTIDOS/octo1.png" alt="" class="octogono">
+    </div>
+    <div class="carousel-item" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_cabecera_2.jpg&#39;) center center; background-size:cover">
+           <img src="VENTAEMBUTIDOS/octo3.png" alt="" class="octogono">
+    </div>
+    <div class="carousel-item" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_cabecera_3.jpg&#39;) center center; background-size:cover">
+           <img src="VENTAEMBUTIDOS/octo1.png" alt="" class="octogono">
+    </div>
+  </div>
+  <a class="carousel-control-prev carousel-arrow-top" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <img src="VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_left.png" alt="" class="carousel-arrow">
+  </a>
+  <a class="carousel-control-next carousel-arrow-top" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <img src="VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_right.png" alt="" class="carousel-arrow">
+  </a>
+  <div class="tittle-slider">
+      <h1>ALIANZA<br>
+          PULIDASO</h1>
+  </div>
+  <img id="arrow-down" src="VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_down.png" alt="" class="arrow-down">
+</div>    
+    
+<div class="row">
+    <div class="col-sm-12 content about">
+        <p>
+            Somos un equipo de expertos Charcuteros,<br>
+            dedicados a compartir nuestra pasión:
+        </p>
+        <h1 style="color: #9d0f2b">
+            LA AUTÉNTICA EXPERIENCIA 
+            DEL BUEN EMBUTIDO
+        </h1>
+        <p>
+            Nuestro amor por este arte gastronómico tan exquisito nos motiva día a día <br>
+            a buscar la perfección y a convertirnos en los mejores maestros 
+            de la buena charcutería. 
+        </p>
+        <div class="button">
+            <span class="button_txt">CONOCE MÁS SOBRE NOSOTROS AQUÍ</span>
+            <span>
+                <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_border-button.png" alt="">
+            </span>
+            <span>
+                <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_border-button.png" alt="">
+            </span>
+        </div>
+    </div>
+    <div class="row col-sm-12 col-xs-12 content content_padding">
+        <div class="col-sm-6 col-xs-12 content-prod">
+            <a href="#">
+            <h2>JAMONES
+            <ul class="rombo" style="opacity: 0;">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            <img src="./VENTAEMBUTIDOS/octo2.png" alt="" class="sello">
+            </a>
+            <div class="producto uno" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_producto1.jpg&#39;) center center; background-size:cover">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 content-prod">
+            <a href="#">
+            <h2>FIAMBRES
+            <ul class="rombo">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            </a>
+            <div class="producto dos" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_producto2.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 content-prod">
+            <a href="#">
+            <h2>CHORIZOS &amp; <br>MORCILLAS
+            <ul class="rombo" style="opacity: 0;">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello">
+            </a>
+            <div class="producto cuatro" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_producto4.jpg&#39;) center center; background-size:cover">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div> 
+        <div class="col-sm-6 col-xs-12 content-prod">
+            <a href="#">
+            <h2>SALCHICHAS
+            <ul class="rombo">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello">
+            </a>
+            <div class="producto tres" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_producto3.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 content-prod">
+            <a href="#">
+            <h2>MADURADOS
+            <ul class="rombo" style="opacity: 0;">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello">
+            </a>
+            <div class="producto cinco" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_producto5.jpg&#39;) center center; background-size:cover">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-12 content-prod">
+            <a href="#">
+            <h2>OTROS<br>PRODUCTOS
+            <ul class="rombo">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            <img src="./VENTAEMBUTIDOS/octo1.png" alt="" class="sello">
+            </a>
+            <div class="producto dos" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_producto6.jpg&#39;) center center; background-size:cover">
+                <div class="hover"></div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-sm-12 col-xs-12 content-prod">
+            <a href="#">
+            <h2 style="font-family: Bluu;">ESPECIALES
+            <ul class="rombo" style="opacity: 0;">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </h2>
+            <img src="./VENTAEMBUTIDOS/octo3.png" alt="" class="sello">
+            </a>
+            <div class="producto producto_especial" style="background: url(&#39;http://www.casaeuropa.pe/assets/img/home/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_especiales.jpg&#39;) center center; background-size:cover;max-width: 100%; font-family: Bluu;">
+                <div class="hover" style="opacity: 0.2;"></div>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="col-sm-12 content-end">
+        <img src="http://www.casaeuropa.pe/assets/img/home/otro-producto.jpg" alt="">
+        <h2>OTRAS LÍNEAS</h2>
+    </div> -->
+</div>
+
+<div id="d_Cook_view" style="width:100%;height: 86px;background-color: black;color:#fff;opacity: 85%;top: calc(100vh - 86px);position: fixed;z-index: 1;">
+    <table style="width:100%;">
+        <tbody><tr>
+            <td style="width:70%;">
+                <div style="width:100%;height: 86px;font-size: 12px;font-weight: 600;padding:5px 10px;overflow: auto;text-align: justify;">
+                Nuestra web utiliza cookies y tecnologías similares para ofrecerte sus servicios, 
+                mejorar tu experiencia online, facilitar tu interacción con redes sociales, 
+                entre otras. 
+                Las cookies también pueden ayudarnos a mejorar nuestro sitio web y sus funcionalidades. 
+                Al dar click en aceptar, autorizas el tratamiento de los datos recolectados a través de cookies, 
+                o bien puedes configurar las cookies de acuerdo a tus preferencias.
+                </div>
+            </td>
+            <td style="width:30%;text-align: center;">
+                <button id="btnLinkPolitica" type="button" class="Boton_cookie" style="border:3px #9d0f2b solid;background-color:#9d0f2b;color:white;font-weight: bold;margin:0px 5px;">
+                    Política de Cookies
+                </button>
+                <button id="btnLinkAceptar" type="button" class="Boton_cookie" style="border:3px #9d0f2b solid;background-color:#9d0f2b;color:#ffffff;font-weight: bold;margin:5px;">
+                    ACEPTAR
+                </button>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+<footer>
+    <ul class="rrss">
+        <li style="margin-left: -8px;">
+            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/fb.png" alt=""></a>
+        </li>
+        <li style="margin-left: -2px;">
+            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/instagram.png" alt=""></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/youtube.png" alt=""></a>
+        </li>
+    </ul>
+    <h5>En Lima encuéntranos en:</h5>
+    <ul class="footer">
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca1.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca2.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca3.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca4.png" alt="">
+        </li>
+        <li>
+            <img src="./VENTAEMBUTIDOS/venta_embutidos_charcuteria_jamones_fiambres_chorizos_morcillas_salchichas_madurados_marca5.png" alt="">
+        </li>
+    </ul>
+    <p><a href="#" style="color:#b5b4b4;" target="_blank">Políticas de Privacidad</a>  |  <a href="#" style="color:#b5b4b4;" target="_blank">Política de Cookies</a></p>
+    <h5><b>Tienda:</b> Av. xxxxxxxxxxxxx  |  <b>Teléfono:</b> 000-000</h5>
+    <h5>2021 xxxxx® Todos los derechos reservados</h5>
+    
+</footer>
+    <script>
+        OcultarAlertCoo();
+        document.getElementById("btnLinkPolitica").onclick = function() {  
+            window.open('#');
+        };
+        document.getElementById("btnLinkAceptar").onclick = function() {  
+            localStorage.setItem("ceCooAcept","1");
+            OcultarAlertCoo();
+        };
+        function OcultarAlertCoo(){
+            let v_Cook="0";
+            if ('ceCooAcept' in localStorage) {
+                v_Cook = JSON.parse(localStorage.getItem("ceCooAcept"));
+            }
+            if (v_Cook!=="0"){
+                document.getElementById("d_Cook_view").style.display="none";
+            }
+        };
+    </script>
+    
+   
+<script>
+$(document).scroll(function(){
+     $('.header').toggleClass('scrolled', $(this).scrollTop() > 100);
+     $('.header img').toggleClass('scrolled-img', $(this).scrollTop() > 100);
+     $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 100);
+     $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 100);
+     var ancho = $(window).width();
+     if(ancho > 768) {
+         $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 100);
+         $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 100);
+         $('.menu__options__producto').toggleClass('menu__options__producto__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__producto a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__delivery').toggleClass('menu__options__delivery__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__delivery a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+     }
+ });
+</script>
+</div>
+    
+</body></html>

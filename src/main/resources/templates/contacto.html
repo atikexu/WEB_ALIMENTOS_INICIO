@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Alimentos selectos</title>
+    <meta name="description" content="Alimentos Selectos dedicada a la venta y distribución de productos nacionales e importados">
+    <meta name="keywords" content="Alimentos, selectos, venta, embutidos, jamones, chorizos, morcillas, salchichas, quesos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>var base_url = '';</script>
+    <link rel="icon" href="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/bootstrap.css">
+    <link rel="stylesheet" href="VENTAEMBUTIDOS/style.css">
+    <script src="VENTAEMBUTIDOS/jquery.min.js"></script>
+    <script src="VENTAEMBUTIDOS/jquery-1.7.2.min.js"></script>
+    <script src="VENTAEMBUTIDOS/preloadjs-0.1.0.min.js"></script>
+	<script src="VENTAEMBUTIDOS/mScript.js"></script>
+    <script src="VENTAEMBUTIDOS/main.js"></script>
+    <script src="VENTAEMBUTIDOS/scroll.js"></script>
+    <script src="VENTAEMBUTIDOS/bootstrap.js"></script>
+<!--     <script src="VENTAEMBUTIDOS/api.js" async defer></script> -->
+
+    <style>
+    	.captchaa {
+		    display: flex;
+        	justify-content: center;
+		}
+    	
+        .load {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .load_salchicha {
+            width: 250px;
+            height: 81px;
+            background: #ffffff;
+        }
+        .load_salchicha_blanco {
+            position: fixed;
+            left: 0;
+            width: 0;
+            height: 81px;
+            background: #1d70b7;
+        }
+		#porcentaje
+		{
+			color: #e40148;
+            font-family: EnamelaBold;
+			font-size:27px;
+			position: absolute;
+			z-index:10;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            letter-spacing: 2px;
+		}
+		#wrapper
+		{
+			display:none;
+		}
+		.Boton_cookie{
+            font-size:16px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+            .Boton_cookie{
+                font-size:12px;
+                cursor: pointer;
+            }
+            .captchaa {
+			    display: flex;
+        		justify-content: center;
+			}
+        }
+    </style>
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-138432179-1');
+</script>
+</head>
+    <body class="" style="">
+	<div id="preloader">
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/load2www.png" alt="">
+		    <span id="porcentaje">94%</span>
+		</div>
+		<div class="load load_salchicha">
+		    <div class="load_salchicha_blanco" style="width: 94%;">
+		    
+		    </div>
+		</div>
+		
+		<div class="load">
+		    <img src="VENTAEMBUTIDOS/logopre.png" alt="">
+		</div>
+	</div>
+
+
+
+<div id="wrapper">
+<div class="degrade"></div>  
+<div class="header">
+   
+<a th:href="@{/}">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+
+<a th:href="@{/}">
+<picture>
+<img class="hidden-xs img-responsive" src="VENTAEMBUTIDOS/img/logotipo-alimentos-selectos.png">
+</picture>
+</a>
+   
+    
+</div>
+
+<div id="item-menu" class="item-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+<div class="layer" style="display:none">
+    
+</div>
+
+<style>
+
+
+</style>
+
+<nav id="menu" class="menu" style="display:none;">
+    <ul class="menu__options">
+        <li id="nosotros">
+                        <span>QUIÉNES SOMOS</span>
+                    </li>
+        <li id="productos">
+                        <span>PRODUCTOS</span>
+        </li>
+        <li id="contacto"  style="border-bottom:5px solid">
+                        <span>CONTACTO</span>
+        </li>
+        <div id="store2" class="store-button2" onclick="" style="display: inline-block;">
+        	<a href="https://wa.me/51989528432?text=Alimentos%20Selectos%20-%20Quisiera%20Consultar%20sobre%20un%20producto" target="_blank">
+            <img src="VENTAEMBUTIDOS/img/whatsapp.png" style="margin-left: auto;margin-right: auto;display: block;"></a>
+        </div>
+    </ul>
+    <img src="./VENTAEMBUTIDOS/alimentos_close.png" alt="" class="menu__close">
+</nav>
+    
+
+<style>
+
+.modal {
+  display: none; 
+  position: fixed; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,.6);
+}
+
+.modal-content {
+  margin: auto;
+  width: 80%;
+  width: 700px;
+}
+
+#modal-button{
+  font-size: 16px;
+  color: black;
+  font-family: Bluu;
+  text-align: center;
+  background: #02f4e0;
+  padding-bottom: 32px;
+}
+
+#modal-button a:link {
+      color: black;
+}
+
+.floating-content {
+    position: absolute;
+    width: 30%;
+    margin-top: 71%;
+    margin-left: 17%;
+    z-index: 3;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  cursor:pointer;
+}
+
+#modal-close {
+    position: absolute;
+    right: auto;
+    width: 60px;
+    text-align: center;
+    right: 0;
+    line-height: 60px;
+    height: 60px;
+    background: black;
+    z-index: 2;
+}
+
+#modal-close span{
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: Bluu;
+    line-height: normal;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 1800px){
+  .modal-content {
+    width: 500px;
+  }
+  
+  #modal-close {
+      width: 40px;
+      line-height: 40px;
+      height: 40px;
+  }
+
+  #modal-close span{
+      font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  #modal-button {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  #modal-close {
+      width: 35px;
+      line-height: 35px;
+      height: 35px;
+  }
+
+  #modal-close span{
+      font-size: 20px;
+  }
+}
+</style>
+
+<div class="slider-contacto" th:styleappend="'background: url(http://comprayventaperu.pe/alimentoselectos.pe/alimentosftp/producto_papa_8_c.jpg) center center; background-size:cover !important'">
+     <div id="tittle-prod" class="tittle-slider">
+        <h1 id="arrow">
+                CONTACTO
+        </h1>
+    </div>
+
+</div>
+    
+<div class="row col-sm-12 content">
+    <div class="col-sm-12 contacto">
+
+        <h7 style="color: #e40158">
+            		ESTAMOS PARA AYUDARTE
+		        </h7>
+        <p>
+            ¿Necesitas información sobre nuestra marca Alimentos Selectos, consulta de Productos, o algún otro tema?<br>
+             Escríbenos y nos comunicaremos contigo lo antes posible.
+        </p>
+        <ul class="datos-contacto">
+            <li>
+                <img src="VENTAEMBUTIDOS/ico_mail.png" alt=""> <a href="mailto:atencionalcliente@alimentoselectos.pe?Subject=Hola%20Alimentos%20Selectos" style="color: #e40158">atencionalcliente@alimentoselectos.pe</a>
+            </li>
+            <li>
+                <img src="VENTAEMBUTIDOS/ico_fono.png" alt=""><span class="tel_desktop" style="color: #e40158">+51 (01) 989 528 432</span><span class="tel_mobile" style="color: #e40158"><a href="tel:+51989528432">+51 (01) 989 528 432</a></span>
+            </li>
+        </ul>
+        
+        <div class="text-danger" id="div_mensaje"><span th:if="${mensaje!=null}"> <span th:text="${mensaje.mensaje1}"></span></span></div>
+        
+        <div id="correo_modal1" class="modal" aria-hidden="true" style="display: none;">
+		  <div class="modal-content">
+
+		    <h1>CONTACTO<br>
+		  </div>
+		</div>
+		
+		<div id="correo_modal" class="modal">
+
+  <!-- Modal content -->
+  <div  class="modal-content">
+    <div class="modal-header" style="text-align: left;">
+<!--       <span class="close">&times;</span> -->
+      <h2 style="color: #e40158">Gracias por contactarnos.</h2>
+    </div>
+    <div class="modal-body">
+      <p>Su correo está siendo enviado</p>
+      <p>Gracias por su preferencia</p>
+    </div>
+    <div class="modal-footer">
+      <h3 style="color: #1d70b7">Alimentos Selectos</h3>
+    </div>
+  </div>
+
+</div>
+
+        <form th:action="@{/enviarEmailContacto}" th:object="${contacto}" method="POST" class="needs-validation" onsubmit="validarFormulario(event)">
+            <input type="text" placeholder="Nombre" class="input-form" name="nombre" id="nombre" th:field="*{nombre}" required><br>
+            <input type="text" placeholder="Empresa" class="input-form" name="compania" id="compania" th:field="*{compania}" required><br>
+            <input type="text" placeholder="Tipo de Empresa" class="input-form" name="tipocompania" id="tipocompania" th:field="*{tipocompania}" required><br>
+            <input type="email" placeholder="Correo" class="input-form" name="correo" id="correo" th:field="*{correo}" required><br>
+            <input type="text" placeholder="Teléfono" class="input-form" name="celular" id="celular" th:field="*{celular}" required><br>
+            <select name="motivo" id="motivo" class="input-form" th:field="*{motivo}" style="height: 48px;" required>
+                <option th:value="''"  th:text="'Motivo de la consulta'" selected></option>
+                <option th:value="'Quiero comprar'" th:text="'Quiero comprar'"></option>
+                <option th:value="'Otras consultas'" th:text="'Otras consultas'"></option>
+            </select>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="input-form" th:field="*{mensaje}" required>Mensaje*</textarea><br>
+			
+<!-- 			<div class="g-recaptcha captchaa" data-sitekey="6LdXEYAmAAAAADScxj3-QFzM8Dd72ItZlVxnOuvq" data-theme="light" data-size="normal"></div> -->
+            
+<!--             <span id="message_span" style="color:red"></span><br> -->
+            <button type="submit" class="btn-form" >ENVIAR</button>
+            <div>
+            </div>
+        </form>
+            </div>
+</div>
+
+<footer>
+	<ul class="rrss">
+		   		<li style="color: #ffffff">Encuéntranos en:</li>
+		        <li>
+		            <a href="https://www.facebook.com/Alimen.selectos" target="_blank"><img src="./VENTAEMBUTIDOS/fb.png" alt="Facebook - Alimentos Selectos" style="width: 60%;height: auto;"></a>
+		        </li>
+		        <li>
+		            <a href="https://instagram.com/Alimentoselectos" target="_blank"><img src="./VENTAEMBUTIDOS/instagram.png" alt="Instagram - Alimentos Selectos" style="width: 60%;height: auto;"></a>
+		        </li>
+	</ul>
+	<div style=" text-align: center;" >
+		<div  style="display: inline-block;padding-left:10px">
+        	<ul style="text-align: left;">
+        	    <li style="color: #ffffff">Categorías</li>
+        		<li><a th:href="@{/precios(categoria=1)}" style="color: #b5b4b4">Jamones</a></li>
+        		<li><a th:href="@{/precios(categoria=2)}" style="color: #b5b4b4">Chicharrones</a></li>
+        		<li><a th:href="@{/precios(categoria=3)}" style="color: #b5b4b4">Jamonadas</a></li>
+        		<li><a th:href="@{/precios(categoria=4)}" style="color: #b5b4b4">Salchichas</a></li>
+        		<li><a th:href="@{/precios(categoria=5)}" style="color: #b5b4b4">Ahumados</a></li>
+        		<li><a th:href="@{/precios(categoria=6)}" style="color: #b5b4b4">Quesos</a></li>
+        		<li><a th:href="@{/precios(categoria=7)}" style="color: #b5b4b4">Papas prefritas</a></li>
+        		<li><a th:href="@{/precios(categoria=8)}" style="color: #b5b4b4">Empacados</a></li>
+        		<li><a th:href="@{/precios(categoria=9)}" style="color: #b5b4b4">Cremas</a></li>
+        		<li><a th:href="@{/precios(categoria=10)}" style="color: #b5b4b4">Aperitivos</a></li>
+        	</ul>
+		</div>
+		<div  style="display: inline-block;padding-left:10px">
+	        <ul style="text-align: left;">
+	        	    <li style="color: #ffffff">Información</li>
+	        		<li><a th:href="@{/}" style="color: #b5b4b4">Inicio</a></li>
+	        		<li><a th:href="@{/somos}" style="color: #b5b4b4">Quiénes somos</a></li>
+	        		<li><a th:href="@{/productos}" style="color: #b5b4b4">Productos</a></li>
+	        		<li><a th:href="@{/contacto}" style="color: #b5b4b4">Contacto</a></li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+        	</ul>
+		</div>
+		<div  style="display: inline-block;padding-left:10px">
+        	<ul style="text-align: left;">
+	        	    <li style="color: #ffffff">Contacto</li>
+	        		<li style="color: #b5b4b4">Dirección:</li>
+	        		<li style="color: #b5b4b4">Lima-Santa Anita</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+	        		<li style="color: #000000">-</li>
+        	</ul>
+        </div>
+    </div>
+    <hr style="background-color: #b5b4b4">
+    <h5>Celular: 989 528 432 | Correo: atencionalcliente@alimentoselectos.pe</h5>
+    <h5>2021 ALIMENTOSELECTOS.PE Todos los derechos reservados</h5>
+</footer>
+    <script>
+    function validarFormulario(event) {
+    	var nombre = $('#nombre').val();
+    	var compania = $('#compania').val();
+    	var tipocompania = $('#tipocompania').val();
+    	var correo = $('#correo').val();
+    	var celular = $('#celular').val();
+    	var motivo = $('#motivo').val();
+    	var mensaje = $('#mensaje').val();
+    	
+        var span = document.getElementById("message_span");
+//         var captcha = grecaptcha.getResponse();
+//         var igualdad = captcha.localeCompare('');
+        
+//         var el_span = document.getElementById("message_span");
+//         if (igualdad == 0) {
+//           event.preventDefault();
+//           el_span.innerText = 'Completar el reCAPTCHA';
+//         }else{
+//         	el_span.innerText = '';
+//         }
+//         if(igualdad==1 && compania!='' && tipocompania!='' && isValidEmail(correo) && celular!='' && motivo!='' && mensaje!=''){
+//     		$('#correo_modal').modal("show");
+//     	}
+
+        if(compania!='' && tipocompania!='' && isValidEmail(correo) && celular!='' && motivo!='' && mensaje!=''){
+    		$('#correo_modal').modal("show");
+    	}
+      }
+    
+    
+        function mostrarModal(){
+        	var nombre = $('#nombre').val();
+        	var compania = $('#compania').val();
+        	var tipocompania = $('#tipocompania').val();
+        	var correo = $('#correo').val();
+        	var celular = $('#celular').val();
+        	var motivo = $('#motivo').val();
+        	var mensaje = $('#mensaje').val();
+        	
+//         	var captcha = grecaptcha.getResponse();
+//         	var secret = "6LdXEYAmAAAAAOIhACjxsZz6lQkpRL-nTGA9SLsj";
+//         	var igualdad = captcha.localeCompare('');
+ 
+//         	var el_span = document.getElementById("message_span");
+
+//         	if(igualdad == 0){
+//         		el_span.innerText = 'Completar el reCAPTCHA';
+//         	}else{
+//         		el_span.innerText = '';
+//         	}
+//         	if(igualdad==1 && compania!='' && tipocompania!='' && isValidEmail(correo) && celular!='' && motivo!='' && mensaje!=''){
+//         		$('#correo_modal').modal("show");
+//         	}
+
+        	if(compania!='' && tipocompania!='' && isValidEmail(correo) && celular!='' && motivo!='' && mensaje!=''){
+        		$('#correo_modal').modal("show");
+        	}
+        		
+        }
+        
+        function isValidEmail(correo)
+        {
+            return /^[a-z0-9]+([-._][a-z0-9]+)*@([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,4}$/.test(correo)
+                && /^(?=.{1,64}@.{4,64}$)(?=.{6,100}$).*/.test(correo);
+        }
+    </script>
+    
+   
+<script>
+$(document).scroll(function(){
+
+     $('.header').toggleClass('scrolled', $(this).scrollTop() > 100);
+     $('.header img').toggleClass('scrolled-img', $(this).scrollTop() > 100);
+     $('.item-menu').toggleClass('scrolled-item-menu', $(this).scrollTop() > 100);
+     $('.degrade').toggleClass('degrade_opacity', $(this).scrollTop() > 100);
+     var ancho = $(window).width();
+     if(ancho > 768) {
+         $('.menu').toggleClass('scrolled__menu', $(this).scrollTop() > 100);
+         $('.menu__options').toggleClass('scrolled__menu__options', $(this).scrollTop() > 100);
+         $('.menu__options__producto').toggleClass('menu__options__producto__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__producto a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__delivery').toggleClass('menu__options__delivery__scrolled', $(this).scrollTop() > 100);
+         $('.menu__options__delivery a').toggleClass('a__scrolled', $(this).scrollTop() > 100);
+     }
+ });
+</script>
+</div>
+    
+</body></html>
